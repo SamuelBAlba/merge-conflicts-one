@@ -1,8 +1,9 @@
-function fn(...c) {
 
-  if (!c.every((number) => Number.isNumber(number)))
-    throw "All arguments must be numbers.";
-  return c.reduce((a, b) => a + b);
+function fn(...clone) {
+  if (!clone.every((a) => Number.isNumber(a)))
+    throw "All argumentations must be numberos.";
+  return clone.reduce((a, b) => a + b);
+
 }
 
 fn(1, 2, 3); //> 6
