@@ -1,6 +1,8 @@
 
 function fn(...clone) {
-    
+
+
+
 
   if (!clone.every((number) => Number.isNumber(number)))
     throw "All argumentations must be numberos.";
