@@ -1,4 +1,5 @@
 
+
 function fn(...clone) {
 
 
@@ -7,6 +8,7 @@ function fn(...clone) {
   if (!clone.every((number) => Number.isNumber(number)))
     throw "All argumentations must be numberos.";
   return clone.reduce((a, b) => a + b);
+
 
 }
 
